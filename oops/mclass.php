@@ -8,7 +8,7 @@
       var $r;
       var $pr;
       var $proc;
-
+       //initializes the value of screensize,ram,company and processor
       function Mobile($screen_size,$ram,$processor,$company)
       {
         
@@ -16,9 +16,8 @@
          $this->ram = $ram;
          $this->processor=$processor;
          $this->company =$company;
-
       }
-      
+      //calculates the price of the mobile according to the features
       function set_price()
       {
          
@@ -26,7 +25,9 @@
          $r=$this->ram;
          $proc=$this->processor;
          $pr1=$this->company;
+         //converts the company name to lower case
          $pr=strtolower($pr1);
+         //this block gets executed if the user enters the valid company i.e available in our catalog
          if($pr=="samsung" || $pr=="moto" || $pr=="lenovo" || $pr=="nokia" )
          {
            if($pr=="samsung")
@@ -45,10 +46,11 @@
            {
             $cost=6100*($s/4.0)+6100*($r/1.0)+6100*($proc/1.0)+0.05*6100;
            }
-           echo "price:".$cost;
+           //displays the cost
+           echo "price:".(int)$cost."\n";
           }
           else
-            echo "enter a valid company\n";
+            echo "specified company not available in our catalog\n";
       }
       
    }
@@ -56,12 +58,13 @@
    $ss = trim(fgets(STDIN, 1024));
    echo "enter ram:";
    $rr = trim(fgets(STDIN, 1024));
-   echo "enter processor:";
-   $pp = trim(fgets(STDIN, 1024));
    echo "enter company name:";
    $cc = trim(fgets(STDIN, 1024));
+   echo "enter processor:";
+   $pp = trim(fgets(STDIN, 1024));
+   //calls the mobile function
    $mobile1=new Mobile($ss,$rr,$pp,$cc);
+   //calls the function set_price
    $mobile1->set_price();
-   
-    
+     
 ?>
