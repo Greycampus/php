@@ -1,8 +1,12 @@
 <?php
-$val1 = 7;      //integer value
-$val2 = 5.89;   //double value
-$val3 = 'greycampus';   //string
-echo gettype($val1), "\n"; //returns integer 
-echo gettype($val2), "\n"; //returns double
-echo gettype($val3), "\n"; //returns string
+
+//initializes the a,b,c values
+$a = 1;      //integer value
+$b = 1.0;   //double value
+$c = 'Grey Campus';   //string
+//gettype function returns the type of the value
+echo gettype($a), "\n"; //returns integer 
+echo gettype($b), "\n"; //returns double
+echo gettype($c), "\n"; //returns string
+
 ?>

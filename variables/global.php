@@ -1,20 +1,24 @@
 <?php
    
-  function circle()
+  function glob1()
    {
       //global variable is declared and can be used any where in the program
       GLOBAL $pi; 
       //initializes the pi value
-      $pi = 3.14;
+      $pi = 3.14159;
    }
-   //calls the circle function
-   circle();
-   echo "Enter radius of the circle:";
-   //takes the radius of the circle
-   $r = trim(fgets(STDIN, 1024));
+   //calls the glob function
+   glob1();
+   $msg = "Enter radius of the circle:";
+   //displays the message stored in msg variable
+   echo $msg;
+   //takes the radius of the circle from the user
+   $r = fgets(STDIN, 1024);
+   //trim function avoids the whitespaces
+   $r=(float)trim($r);
    //calculates the area of the circle
-   $val = $pi*$r*$r;
-   //displays te value
-   print "Area of the circle: $val\n";
+   $area = $pi*$r*$r;
+   //displays the value
+   print "Area of the circle with radius $r is $area\n";
    
 ?>

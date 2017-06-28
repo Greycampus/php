@@ -1,26 +1,29 @@
 <?php
 
-echo "enter the coefficients of quadratic equation:";
+$msg="enter the coefficients of quadratic equation:";
+echo $msg;
 //takes coefficients of the quadratic equation
-for($i=0;$i<3;$i++)
-{
-	$array[$i]=trim(fgets(STDIN, 1024));
+$equa=trim(fgets(STDIN, 1024));
+$coef = explode(" ",$equa);
+for ($i=0; $i < sizeof($coef) ; $i++) 
+{ 
+	$coef[$i]= number_format($coef[$i],2);
 }
 //stores the size of the array
-$l=sizeof($array);
+$l=sizeof($coef);
 //differentiating the equation-> power * coefficient, and store in a array
-for($i=0;$i<3;$i++)
+for($i=0;$i<$l;$i++)
 {
-	$array1[$i]=($l-($i+1))*$array[$i];
+	$defe[$i]=number_format((($l-($i+1))*$coef[$i]),2);
 }
-echo "after differentiation the euation is:$array1[0]x $array1[1] \n";
+echo "after differentiation the euation is:$defe[0]x+$defe[1] \n";
 //to find the value of x, for e.g: 2x-5=0 =>x=5/2
-$sol=$array1[1]/$array1[0];
+$mai=$defe[1]/$defe[0];
 //if the coefficient of x^2 is >0 minima
-if($array[0]>0)
- echo "the mininima value is $sol\n";
-//if the coefficient of x^2 is <o minima
+if($coef[0]>0)
+ echo "the minima value is $mai\n";
+//if the coefficient of x^2 is <0 mixima
 else
-	echo "the maxima value is $sol\n";
+ echo "the maxima value is $mai\n";
 
 ?>

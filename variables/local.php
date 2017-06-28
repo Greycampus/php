@@ -1,16 +1,17 @@
 <?php
 
-echo "Enter a number:";
+$msg= "Enter a number:";
+//displays the message stored in the msg variable
+echo $msg;
 //takes input of a number to find nearest power of 3
-$num = trim(fgets(STDIN, 1024));
+$n = fgets(STDIN, 1024);
+$n = trim($n);
 //finds the logarithm of the given number to the base 3
-$min= log($num,3);
-//rounds the number down to the integer
-$min=floor($min);
+//floor function rounds the number down to the integer
+$minn = floor(log($n,3));
 //finds the logarithm of the given number to the base 3
-$max=log($num,3);
-//rounds the number up to the integer
-$max=ceil($max);
+//ceil function rounds the number up to the integer
+$maxn = ceil(log($n,3));
 //'**' denotes the power of the value
 //we all know the formula a^m=n => m=log n to the base a
 //in this program we are finding out the log of the number to the base 3 
@@ -23,10 +24,10 @@ $max=ceil($max);
 //min value=log(8,n) =>1.89
 //after rounding up to integer value is 3
 //since 8-3>3^2-8, answer id 3^2
-if(($num-3**$min)<=(3**$max-$num))
+if(($n-3**$minn)<=(3**$maxn-$n))
 {
-	echo 3**$min;
+	echo 3**$minn."\n";
 }
 else
- echo 3**$max;
+ echo 3**$maxn."\n";
 ?>

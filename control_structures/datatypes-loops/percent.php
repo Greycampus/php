@@ -1,32 +1,31 @@
 <?php
 
-echo "Enter number of students:";
+$msg="enter number of students:";
+echo $msg;
 //takes the value of number of students
-$stud=trim(fgets(STDIN, 1024));
-//initializes the array with number of students
-$array=new SplFixedArray($stud);
-echo "enter name and marks:\n";
+$n=trim(fgets(STDIN, 1024));
+echo "enter the details of students:\n";
 //loop continues till the number of students given
 //name and values are take in the form of string and then converts in to array using explode function
-for($i=0;$i<$stud;$i++)
+for($i=0;$i<$n;$i++)
 {
-  $studd=trim(fgets(STDIN, 1024));
-  $studd=explode(" ",$studd);
-  //the complete array is taken in to an other array
-  $array[$i]=$studd;
+  $q=trim(fgets(STDIN, 1024));
+  $q=explode(" ",$q);
+  //the complete marks is taken in to an other marks
+  $marks[$i]=$q;
 }
 
 echo "Enter student for percentage:";
 //takes input of the person to know the marks
 $st=trim(fgets(STDIN, 1024));
-//verifies all the names that are present in the array of array first index
-for($i=0;$i<$stud;$i++)
+//verifies all the names that are present in the marks of marks first index
+for($i=0;$i<$n;$i++)
 {
-	if($st==$array[$i][0])
+	if($st==$marks[$i][0])
 	{
 		//calculates the percentage of the person
-		$sum=($array[$i][1]+$array[$i][2]+$array[$i][3])/3;
-		echo $sum\n;
+		$sum=($marks[$i][1]+$marks[$i][2]+$marks[$i][3])/3;
+		echo "percentage of $st is $sum\n";
 		break;
 	}
 }

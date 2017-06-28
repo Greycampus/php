@@ -21,7 +21,7 @@ function soe($n,$prime)
     //returns the prime array
     return $prime;
 }
-
+//checking whether the prime meets required condition
 function mp($n)
 {
     //sets all the values of prime array to true
@@ -47,7 +47,8 @@ function mp($n)
     }
 }
 
-echo "enter the number:";
+$msg="enter the number:";
+echo $msg;
 //takes input of a number to display range of the number from 0 to n
 $n=trim(fgets(STDIN, 1024));
 echo "primes that are exactly at absolute difference of 1 with powers of 2 are:\n";

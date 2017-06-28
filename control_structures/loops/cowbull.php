@@ -1,21 +1,18 @@
 <?php
 
-echo "enter the secret number for the game of four digits:";
+$msg="enter the secret number for the game:";
+echo $msg;
 //takes the secret number which contains 4 digits
-$sec=trim(fgets(STDIN, 1024));
-echo "\n";
-//splits the number in to array
-$arr1 = str_split($sec);
-echo "You have three chances, enter 4 digit number (range 1-6):\n";
+$sec=fgets(STDIN, 1024);
+$sec=trim($sec);
+echo "player have three chances, enter 4 digit number (range 1-6):\n";
 //have three chances for the user, so loop iterates for three times
 for($i=0;$i<3;$i++)
 {
     //takes the guess one by one
     $g=trim(fgets(STDIN, 1024));
-    //splits the number in to array for comparison
-    $arr2=str_split($g);
     //if both the array matches, then the user won
-    if($arr1==$arr2)
+    if($sec==$g)
     {
         echo "You Won..\n";
         return 0;
@@ -27,26 +24,26 @@ for($i=0;$i<3;$i++)
         for($j=0;$j<4;$j++)
         {
             //the digit that is entering in the loop is stored in the variable
-            $sam=$arr2[$j];
+            $sam=$g[$j];
             //strpos is the function, that return the position of a particular character in the string
             $pos = strpos($sec, $sam);
             //if the digit is not present in the secret number and the i th index value of both secret number and guess is not same then - is stored in the array
             //which indicates that, the digit is present but not at the correct position 
-            if($pos!==false && $arr1[$j]!=$arr2[$j] )
-                $arr3[$j]="-";
+            if($pos!==false && $sec[$j]!=$g[$j] )
+                $arr[$j]="-";
             // if the i th index valuef both secret number and guess is same then + is stored in the array
-            elseif($arr1[$j]==$arr2[$j])
+            elseif($sec[$j]==$g[$j])
              {
-                $arr3[$j]="+";
+                $arr[$j]="+";
              }
              //if none of the above conditions satisfy, then null is stored
              else
-                $arr3[$j]=" ";
+                $arr[$j]=" ";
         }
         //displays the array
         for($k=0;$k<4;$k++)
         {
-            echo $arr3[$k];
+            echo $arr[$k];
         }
         
       echo "\nTry again\n";

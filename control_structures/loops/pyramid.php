@@ -1,6 +1,7 @@
 <?php
 
-echo "Enter a number:";
+$msg= "enter pyramid height:";
+echo $msg;
 $num = trim(fgets(STDIN, 1024));
 //as we use only one variable i.e i
 //power of 10 -1 = largest number in its digit space

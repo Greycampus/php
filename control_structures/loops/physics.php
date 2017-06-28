@@ -1,15 +1,16 @@
 <?php
 
-$k=trim(fgets(STDIN, 1024));  //number of mediums
-$l=trim(fgets(STDIN, 1024));  //length of each medium
-$h=trim(fgets(STDIN, 1024));  //height of ball
-$d=trim(fgets(STDIN, 1024));  //distance travelled for each step
-
-echo "enter value for ".$k."mediums:";
-//sets the array to k mediums
-$kq = new SplFixedArray($k);
+echo "enter total number of mediums:";
+$k=trim(fgets(STDIN, 1024)); 
+echo "enter length of medium:";  
+$l=trim(fgets(STDIN, 1024));
+echo "enter height from which ball is thrown:";  
+$h=trim(fgets(STDIN, 1024)); 
+echo "enter distance travelled in each step:"; 
+$d=trim(fgets(STDIN, 1024));  
+echo "enter value for ".$k." mediums:";
 //takes values of mediums
-for( $i=0;$i<$k;$i++ )
+for( $i=0; $i<$k; $i++)
  {
     $kq[$i]=trim(fgets(STDIN, 1024));
  }
@@ -29,6 +30,6 @@ while($h1!=0)
         }
     }
 }
-echo "distance traveled by ball is $d1\n";
+echo "distance travelled by the ball is $d1\n";
 
 ?>

@@ -1,18 +1,24 @@
 <?php
 
-echo "enter initial term:";
+$msg="enter initial term:";
+echo $msg;
 //takes initial value
-$a=trim(fgets(STDIN, 1024));
+$a=fgets(STDIN, 1024);
+//trim function avoids the whitespaces
+$a=trim($a);
 //takes the ratio of the geometric progression
-echo "enter ratio in series:";
-$r=trim(fgets(STDIN, 1024));
+$msg="enter ratio in series:";
+echo $msg;
+$r=fgets(STDIN, 1024);
+//trim function avoids the whitespaces
+$r=trim($r);
 //takes the input of a number to check
 echo "enter number you want to check:";
-$k=trim(fgets(STDIN, 1024));
-
+$k=fgets(STDIN, 1024);
+$k=trim($k);
 if($k%$a==0 && $k==$a)
     echo "you just entered the initial term again,yes its in series";
-elseif($k%$a==0 and $k%$r==0 and $k>$a)
+elseif($k%$a==0 && $k%$r==0 && $k>$a)
 {
 	//dividing by a(initial term)
     $tmp = $k/$a; 
@@ -22,10 +28,19 @@ elseif($k%$a==0 and $k%$r==0 and $k>$a)
         $tmp=$tmp/$r;
       }
     if($tmp==1)
-        echo "$k is in series\n";
+    {
+        $msg="yes its in series\n";
+        echo $msg;
+    }
     else
-        echo "$k is not in serie\n";
+    {
+        $msg="not in series\n";
+        echo $msg;
+    }
 }
 else
- echo "$k is not in series\n";
+{
+ $msg="not in series\n";
+ echo $msg;
+}
 ?>

@@ -5,7 +5,6 @@ Installation
 Variables
 1.Use pi value as global variable in your program to print the area of circle
 2.Use local variable take input from user and print the nearest power of 3.
-3.Program using Constants
 
 Datatypes
 1.Take input from user and print the type of data inputed

@@ -1,19 +1,21 @@
 <?php
 
-echo "enter the number of elements:";
+$msg="enter the number of elements:\n";
+//displays the message stored in msg variable
+echo $msg;
 //takes the size of the array
-$s= trim(fgets(STDIN, 1024));
-//initializes the limit of the array
-$array = new SplFixedArray($s);
+$a= fgets(STDIN, 1024);
+//trim function avoids the whitespaces
+$a=trim($a);
 echo "enter the elements:";
 //by incrementing i value, the array stores the input values
- for( $i = 0; $i<$s; $i++ )
+ for( $i = 0; $i<$a; $i++ )
  {
     $array[$i]=trim(fgets(STDIN, 1024));
  }
  //displays all the value in the array
- echo "elements in the list are:\n";
- for( $i = 0; $i<$s; $i++ )
+ echo "elements of list are:\n";
+ for( $i = 0; $i<$a; $i++ )
  {
     echo "$array[$i] \n";
  }

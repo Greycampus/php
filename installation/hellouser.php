@@ -1,7 +1,10 @@
 <?php
-echo "whats your name?";
-//takes input in the string format
-$input = trim(fgets(STDIN, 1024));
-//displays the user name
-echo "Hello $input\n";
+
+$msg = "whats your name?\n";
+//displays the message stored in msg
+echo $msg;
+//takes input in the string format from the user
+$a = fgets(STDIN, 1024);
+//displays the user name along with hello
+echo "Hello $a\n";
 ?>

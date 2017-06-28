@@ -27,21 +27,20 @@ function vote($str)
 	  $i=0;
 	  //displays the first value
 	  if($array[0][0]!=$array[1][0])
-	  {
-	    echo $array[0][1]." wins with ".$array[0][0]." votes\n";
-	  }
+	   {
+	      echo $array[0][1]." wins with ".$array[0][0]." votes\n";
+	   }
 	  //to check if the tie occurs
 	  else
 	  {
-	  	     echo "its ties between ";
-	  		  echo $array[0][1];
-			  while($array[0][0]==$array[$i+1][0])
-			  {
-
-			  	echo ",".$array[$i+1][1];
-			  	$i++;
-			  }
-			  echo " with ".$array[0][0]." votes\n";		
+	  	echo "its ties between ";
+	  	echo $array[0][1];
+		while($array[0][0]==$array[$i+1][0])
+		 {
+	      echo ",".$array[$i+1][1];
+		  $i++;
+		 }
+	    echo " with ".$array[0][0]." votes\n";		
 	   }
 }
  

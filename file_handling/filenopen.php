@@ -3,7 +3,8 @@
 $myFile = "text.txt";
 //splits the file in to array
 $lines = file($myFile);
-echo "Enter line number:";
+$msg= "enter the line number:";
+echo $msg;
 //takes the value as line number
 $l=trim(fgets(STDIN, 1024));
 //as array starts with 0 index , the value will be decreased by 1
