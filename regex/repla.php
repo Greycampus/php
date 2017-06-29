@@ -1,16 +1,17 @@
 <?php
-echo "enter the string:";
+$msg="enter the string:";
+echo $msg;
 //takes a string along with sum nubers
-$str=trim(fgets(STDIN, 1024));
-//calculates the size of the string
-$s=sizeof($str);
+$k=fgets(STDIN, 1024);
+echo "string before modification:$k";
 //replace '[!*]' with the null
-$new_str = preg_replace('~[[][!][*][]]~', "", $str);
+$new_str = preg_replace('~[[][!][*][]]~', "", $k);
 //to check if any other pattern like '[!*]' present in new_str, and replaces if present
-for($i=0;$i<$s;$i++)
+for($i=0;$i<sizeof($k);$i++)
 {
    $new_str = preg_replace('~[[][!][*][]]~', "", $new_str);
 }
 //displays the new_str
-echo $new_str;
+echo "string after modification:$new_str";
+
 ?>

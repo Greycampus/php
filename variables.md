@@ -28,7 +28,9 @@ echo $x + $y;
 ?>
 ```
 Output:9<br/>
+
 **Local Variables**
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A variable declared in a function is considered local; that is, it can be referenced solely in that function. Any assignment outside of that function will be considered to be an entirely different variable from the one contained in the function −
 ```
 <?php
@@ -50,6 +52,7 @@ $x outside of function is 4.
 ```
 
 **Function Parameters**
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Function parameters are declared after the function name and inside parentheses. They are declared much like a typical variable would be 
 ```
 <?php
@@ -67,6 +70,7 @@ This will produce the following result
 ```Return value is 100```
 
 **Global Variables**
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In contrast to local variables, a global variable can be accessed in any part of the program. However, in order to be modified, a global variable must be explicitly declared to be global in the function in which it is to be modified. This is accomplished, conveniently enough, by placing the keyword GLOBAL in front of the variable that should be recognized as global. Placing this keyword in front of an already existing variable tells PHP to use the variable having that name. Consider an example −
 ```
 <?php
@@ -86,6 +90,7 @@ This will produce the following result
 ```Somevar is 16```
 
 **Static Variables**
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The final type of variable scoping that I discuss is known as static. In contrast to the variables declared as function parameters, which are destroyed on the function's exit, a static variable will not lose its value when the function exits and will still hold that value should the function be called again.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can declare a variable to be static simply by placing the keyword STATIC in front of the variable name.
 ```
@@ -109,5 +114,6 @@ This will produce the following result
 ```
 
 **Constant:**<br/>
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A constant is a name or an identifier for a simple value. A constant value cannot change during the execution of the script. By default, a constant is case-sensitive.To define a constant you have to use define() function and to retrieve the value of a constant, you have to simply specifying its name.You can also use the function constant() to read a constant's value if you wish to obtain the constant's name dynamically.
 

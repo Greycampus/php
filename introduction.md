@@ -19,6 +19,7 @@
   - Embedded: PHP code can be easily embedded within HTML tags and script.
 
 **PHP tags:**<br/>
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The PHP parsing engine needs a way to differentiate PHP code from other elements in the page. The mechanism for doing so is known as 'escaping to PHP'. There are four ways to do this<br/>
 -The most common tag:<br/>
 &nbsp;&nbsp;```<?php [code here] ?>```<br/>
@@ -34,26 +35,30 @@
 -Single-line comment:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;They are generally used for short explanations or notes relevant to the local code. 
 &nbsp;Example:<br/>
-&nbsp;&nbsp;&nbsp;<?<br/>
-&nbsp;&nbsp;&nbsp;# This is a comment, and<br/>
-&nbsp;&nbsp;&nbsp;//This is a comment too. Each style comments only<br/>
-&nbsp;&nbsp;&nbsp;?><br/>
-
+```
+<?
+# This is a comment, and<br/>
+//This is a comment too. Each style comments only<br/>
+?>
+```
 -Multi-line comment:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;They are generally used to provide pseudocode algorithms and more detailed explanations when necessary. The multiline style of commenting is the same as in C. Here are the example of multi lines comments.<br/>
 &nbsp;Example:<br/>
-&nbsp;&nbsp;&nbsp;<?<br/>
-&nbsp;&nbsp;&nbsp;/* This is a comment with multiline<br/>
-&nbsp;&nbsp;&nbsp;php<br/>
-&nbsp;&nbsp;&nbsp;laravel<br/>
-&nbsp;&nbsp;&nbsp;*/<br/>
-&nbsp;&nbsp;&nbsp;?><br/>
-
+```
+<?<br/>
+/* This is a comment with multiline<br/>
+php<br/>
+laravel<br/>
+*/<br/>
+?><br/>
+```
 **Statements are expressions terminated by semicolons**
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A statement in PHP is any expression that is followed by a semicolon (;).Any sequence of valid PHP statements that is enclosed by the PHP tags is a valid PHP program. Here is a typical statement in PHP, which in this case assigns a string of characters to a variable called $greeting 
 ```$greeting = "Welcome to PHP!";```
 
 **Running PHP Script from Command Prompt**
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yes you can run your PHP script on your command prompt. Assuming you have following content in test.php file
 ```
 <?php

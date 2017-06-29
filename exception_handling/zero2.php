@@ -1,20 +1,15 @@
 <?php
-#creating custom exception by inheriting the Exception class
-echo "enter divident:";
-$inp1 = trim(fgets(STDIN, 1024));
-echo "enter divisor:";
-$inp2 = trim(fgets(STDIN, 1024));
-checknum($inp1,$inp2);
-function checknum($inp1,$inp2)
+
+function check($a,$b)
 {
    //converts the divisor-1 value in to binary format, as 2^n-1 contains only 1's in its binary value
-   $b=decbin($inp2-1);
+   $bi=decbin($b-1);
    //nows split the binary value
-   $b=str_split($b,1);
+   $bi=str_split($bi,1);
    //extract the unique value of that value
-   $b=array_unique($b);
+   $bi=array_unique($bi);
    //if it is 0 then exception throws or if the array has only 1 unique value then exception throws
-   if($inp2==0 || sizeof($b)==1)
+   if($b==0 || sizeof($bi)==1)
    {
     try 
     {
@@ -30,8 +25,16 @@ function checknum($inp1,$inp2)
    else
    {
     //displays the value if no exception occurs
-    echo $inp1/$inp2."\n";
+    echo $a/$b."\n";
    }
 }
+$msg="enter divident:";
+echo $msg;
+$a = trim(fgets(STDIN, 1024));
+$msg="enter divisor:";
+echo $msg;
+$b = trim(fgets(STDIN, 1024));
+check($a,$b);
+
    
 ?>

@@ -1,7 +1,8 @@
 <?php
 
 //enter votes in the form of string
-echo "Enter votes:";
+$msg="Enter votes:";
+echo $msg;
 //takes the votes in the form of the string
 $str=trim(fgets(STDIN, 1024));
 //calls the function vote

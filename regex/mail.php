@@ -1,21 +1,19 @@
 <?php
 
+
+$msg="enter the raw data containing mail addresses:\n";
+echo $msg;
 //takes a input string with mail id format
-$string=trim(fgets(STDIN, 1024));
+$data=fgets(STDIN, 1024);
 //pattern to extract @ and . symbol till three characters
-$pattern = '/[a-z0-9_\-\+]+[a-z0-9.\-\+]+@[a-z0-9\-]+\.([a-z]{2,3})(?:\.[a-z]{2})?/i';
-//pattern that matches the complete string and stores in to array
-preg_match_all($pattern, $string, $matches);
-//combines the index 0 to an array
-$matches=implode(" ", $matches[0]);
-//converts the string into array
-$matches=explode(" ", $matches);
-$m=sizeof($matches);
-echo "after extraction:\n";
+$m = '/[a-z0-9_\-\+]+[a-z0-9.\-\+]+@[a-z0-9\-]+\.([a-z]{2,3})(?:\.[a-z]{2})?/i';
+//pattern that matches the complete string and stores in to the matches array and the number of matches is returned, that value is stored in l variable
+$l=preg_match_all($m, $data, $matches);
+echo "extracted email addresses are:\n";
 //displays the strings
-for($i=0;$i<$m;$i++)
+for($i=0;$i<$l;$i++)
 {
-	echo $matches[$i];
+	echo $matches[0][$i];
 	echo "\n";
 }
 
