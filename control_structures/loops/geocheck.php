@@ -1,5 +1,14 @@
 <?php
+/*PHP program to check whether a given number is in a goemetric progression or not for a given initial value and factor
 
+Input
+enter initial term:2
+enter ratio in series:8
+enter number you want to check:16
+
+Output
+yes its in series
+*/
 $msg="enter initial term:";
 echo $msg;
 //takes initial value

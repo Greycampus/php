@@ -1,4 +1,12 @@
 <?php
+/*PHP program of writing a function to find whether a given number is armstrong number or not
+
+Input
+Enter a number:370
+
+Output
+armstrong number
+*/
 //logic for armstrong
 function arm($num)
 {

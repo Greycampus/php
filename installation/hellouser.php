@@ -1,5 +1,12 @@
 <?php
+/*PHP program to print Hello User after reading user name from input
 
+Input
+whats your name?
+Bhavana
+
+Output
+Hello Bhavana*/
 $msg = "whats your name?\n";
 //displays the message stored in msg
 echo $msg;

@@ -1,5 +1,18 @@
 <?php
+/*PHP program to use the mobile phone class as parent and build the accessory class for a shop for biling purpose.
 
+Input
+enter screen size:5
+enter ram:3
+enter company name:moto
+enter processor:3
+do u want screenguard enter 1 if yes enter 0 if no:1
+do u want pouch enter 1 if yes enter 0 if no:0
+do u want headset enter 1 if yes enter 0 if no:1
+
+Output
+total cost of your moto with accesories:44692
+*/
    class Mobile {
       var $screen_size;
       var $ram;
@@ -94,11 +107,11 @@ class Bill extends Mobile
    $cc = trim(fgets(STDIN, 1024));
    echo "enter processor:";
    $pp = trim(fgets(STDIN, 1024));
-   echo "do u want screenguard:";
+   echo "do u want screenguard enter 1 if yes enter 0 if no:";
    $sg = trim(fgets(STDIN, 1024));
-   echo "do u want pouch:";
+   echo "do u want pouch enter 1 if yes enter 0 if no:";
    $po = trim(fgets(STDIN, 1024));
-   echo "do u want headset:";
+   echo "do u want headset enter 1 if yes enter 0 if no:";
    $hs = trim(fgets(STDIN, 1024));
    //calls the sub class constructor
    $mobile1=new Bill($ss,$rr,$cc,$pp,$sg,$po,$hs);

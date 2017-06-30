@@ -1,5 +1,10 @@
 <?php
+/*PHP program to use Function Overriding in a class
 
+Output
+B's hello
+A's good bye
+*/
 class A
 {
     #constructor of A

@@ -1,5 +1,13 @@
 <?php
+/*PHP program to find the total occurences of a symbol in string using reqular expressions
 
+Input
+enter the main string:bhghugcdb3454kschbnbvnng
+Enter a symbol that you wish to find occurences:b
+
+Output
+b occured 5 times in bhghugcdb3454kschbnbvnng
+*/
 $msg= "enter the main string:";
 echo $msg;
 //takes the input of a string
@@ -15,6 +23,6 @@ $new_str = preg_replace('~['.$s.']~', "", $k);
 $j=strlen($new_str);
 //difference between old string and new string gives the count of the character
 $ans=$i-$j;
-echo "$s occured $ans times in $k\n";
+echo "$s occured $ans times in $k";
 
 ?>

@@ -1,5 +1,12 @@
 <?php
+/*PHP program to find the sum of the numbers in a alphanumeric string 
 
+Input
+enter the alphanumeric string:bhadfdf1205210dfdvana996
+
+Output
+the sum is:35
+*/
 $msg="enter the alphanumeric string:";
 echo $msg;
 //takes a king along with sum nubers

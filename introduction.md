@@ -21,13 +21,13 @@
 **PHP tags:**<br/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The PHP parsing engine needs a way to differentiate PHP code from other elements in the page. The mechanism for doing so is known as 'escaping to PHP'. There are four ways to do this<br/>
--The most common tag:<br/>
+- The most common tag:<br/>
 &nbsp;&nbsp;```<?php [code here] ?>```<br/>
--Another version is this one, which is the same kind of tags used for e.g. blocks of JavaScript code:<br/>
+- Another version is this one, which is the same kind of tags used for e.g. blocks of JavaScript code:<br/>
 &nbsp;&nbsp;```<script language=”php”> [code here] </script>```<br/>
--A lot of PHP installations are set up to allow the short version:<br/>
+- A lot of PHP installations are set up to allow the short version:<br/>
 &nbsp;&nbsp;```<? [code here] ?>```<br/>
--On some servers, ASP style tags have been enabled. They look like this:<br/>
+- On some servers, ASP style tags have been enabled. They look like this:<br/>
 &nbsp;&nbsp;```<% [code here] %>```<br/>
 
 **Commenting PHP code:**<br/>
@@ -37,20 +37,20 @@
 &nbsp;Example:<br/>
 ```
 <?
-# This is a comment, and<br/>
-//This is a comment too. Each style comments only<br/>
+# This is a comment, and
+//This is a comment too. Each style comments only
 ?>
 ```
 -Multi-line comment:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;They are generally used to provide pseudocode algorithms and more detailed explanations when necessary. The multiline style of commenting is the same as in C. Here are the example of multi lines comments.<br/>
 &nbsp;Example:<br/>
 ```
-<?<br/>
-/* This is a comment with multiline<br/>
-php<br/>
-laravel<br/>
-*/<br/>
-?><br/>
+<?
+/* This is a comment with multiline
+php
+laravel
+*/
+?>
 ```
 **Statements are expressions terminated by semicolons**
 

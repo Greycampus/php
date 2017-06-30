@@ -1,5 +1,15 @@
 <?php
+/*PHP program to open a text file and print the nth line in text file if nth line does not exist print 'no data'
 
+Input
+enter the line number:2
+hello world
+
+data in text.txt file
+Hi
+hello world
+welcome PHP
+*/
 $myFile = "text.txt";
 //splits the file in to array
 $lines = file($myFile);

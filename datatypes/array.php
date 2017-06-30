@@ -1,5 +1,19 @@
 <?php
+/*PHP program to take input, a sequence of numbers from user and store it in a list or array
 
+Input
+enter the number of elements:3
+enter the elements:
+11
+12
+13
+
+Output
+elements in the list are:
+11
+12
+13
+*/
 $msg="enter the number of elements:\n";
 //displays the message stored in msg variable
 echo $msg;

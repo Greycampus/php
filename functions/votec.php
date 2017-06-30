@@ -1,5 +1,12 @@
 <?php
+/*PHP program of writing a function to find the voting result based on a string input such that a letter in the string belongs to a particular party
 
+Input
+Enter votes:aaabbbcccdddacbdacdjhg  
+
+Output    
+its ties between d,c,a with 5 votes
+*/
 //enter votes in the form of string
 $msg="Enter votes:";
 echo $msg;

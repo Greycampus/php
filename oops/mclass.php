@@ -1,4 +1,20 @@
 <?php
+/*PHP program to build a class and store the data of the mobile phones with screen size,ram,company and processor along with Constructor and function to estimate cost of phone based on conditions
+samsung:7000(pr)
+moto:5999
+lenovo:4000
+nokia:6100
+est cost = pr*(scr size/4.0)+pr*(ram/1.0)+pr*(proc/1.0)+0.05*pr
+
+Input
+enter screen size:5
+enter ram:3
+enter company name:moto
+enter processor:3
+
+Output
+price:43792
+*/
    class Mobile {
       var $screen_size;
       var $ram;

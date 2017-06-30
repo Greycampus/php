@@ -1,5 +1,14 @@
 <?php
+/*PHP program to implement a ceaser cipher in a class by inhereting texts from a parent class
 
+Input
+enter the text to encrypted:encrypted12345
+enter shift for cisear cipher:3
+
+Output
+entered plain text:encrypted12345
+cipher text is hqfubswhg45678
+*/
 class cipher
 {
   function Cipher($tst,$sh)

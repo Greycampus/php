@@ -1,5 +1,13 @@
 <?php
+/*PHP program to use exception handling and prevent the calculation of roots of a quadratic equation if root are complex
 
+Input
+enter the equation in the form of 1 2 1 if equation is x^2 + 2x + 1:1 1 6
+
+Output
+Caught exception: roots are imaginary, so calculation stopped
+
+*/
 function quad($t,$k)
 	{
 	 	//if less than zero, throws exception

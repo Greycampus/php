@@ -1,5 +1,13 @@
 <?php
+/*PHP program to use Exception handling and catch divided by zero, divided by power of 2 exceptions
 
+Input
+enter divident:9
+enter divisor:2
+
+Output
+Caught exception: shouldnt be divided by zero or a power of 2
+*/
 function check($a,$b)
 {
    //converts the divisor-1 value in to binary format, as 2^n-1 contains only 1's in its binary value

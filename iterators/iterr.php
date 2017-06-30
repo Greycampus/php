@@ -1,5 +1,18 @@
 <?php
+/*PHP program to use iterators and generate the multiples of two and three
 
+Input
+enter the number of terms:5
+
+Output
+Multiples of both two and three are:
+0
+6
+12
+18
+24
+30
+*/
 $msg="enter the number of terms:";
 echo $msg;
 $n=trim(fgets(STDIN, 1024));

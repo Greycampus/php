@@ -1,5 +1,12 @@
 <?php
+/*PHP program to use local variable and take input from user and print the nearest power of 3.
 
+Input
+Enter a number:5
+
+Output
+3
+*/
 $msg= "Enter a number:";
 //displays the message stored in the msg variable
 echo $msg;

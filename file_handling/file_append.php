@@ -1,5 +1,25 @@
 <?php
+/*PHP program to append two files in another file
 
+Output
+appended file data:
+Hi
+hello world
+welcome PHP
+hi hello
+where are you
+how are you
+
+data in text.txt file
+Hi
+hello world
+welcome PHP
+
+dat in text1.txt file
+hi hello
+where are you
+how are you
+*/
  //converting the file into string
 $file1 = file_get_contents("text.txt"); 
 //converting the file into string

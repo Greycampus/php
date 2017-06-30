@@ -1,4 +1,14 @@
 <?php
+/*PHP program to replace all the patterns like '[!*]' using regular expression
+
+Input
+enter the string:bhgd[!*[!*][!*]]hjiurhyh7t54r
+
+Output
+string before modification:bhgd[!*[!*][!*]]hjiurhyh7t54r
+string after modification:bhgdhjiurhyh7t54r
+
+*/
 $msg="enter the string:";
 echo $msg;
 //takes a string along with sum nubers

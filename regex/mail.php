@@ -1,5 +1,16 @@
 <?php
+/*PHP program to extract the mail addresses in the given string using regular expression
 
+Input
+enter the raw data containing mail addresses:
+bhavana@gmail.comrag@outlook.comteja@nic.in
+
+Output
+extracted email addresses are:
+bhavana@gmail.com
+rag@outlook.com
+teja@nic.in
+*/
 
 $msg="enter the raw data containing mail addresses:\n";
 echo $msg;

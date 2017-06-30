@@ -1,5 +1,39 @@
 <?php
+/*PHP program to print  the name of student having second least percentage from the given list of students , if
+there are multiple students should print multiple students in alphabetical order
+input:
+5
+rag
+77
+teja
+89
+bhavana
+84
+praveen
+77
+bhadram
+75
+output:
+praveen
+rag
 
+Input
+enter number of students:4
+enter student details:
+bhavana
+96
+rag
+89
+teja
+89
+niha
+45
+
+Output
+students with second least marks:
+rag
+teja
+*/
 $msg= "enter number of students:";
 echo $msg;
 //takes the value of number of students

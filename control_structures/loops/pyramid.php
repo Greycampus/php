@@ -1,5 +1,20 @@
 <?php
+/*PHP program to print the number pyramid of height n(input from user) using a single variable in entire program
+for 3
+1
+11
+111
 
+Input
+enter pyramid height:5
+
+Output
+1
+11
+111
+1111
+11111
+*/
 $msg= "enter pyramid height:";
 echo $msg;
 $num = trim(fgets(STDIN, 1024));

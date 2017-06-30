@@ -1,5 +1,12 @@
 <?php
+/*PHP program of writing a function to find gcd of two numbers
 
+Input
+Enter two numbers whose GCD is to be found:15 27
+
+Output
+The GCD is:3
+*/
 //logic for gcd function
 function gcdd($a,$b)
 {

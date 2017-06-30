@@ -1,5 +1,9 @@
 <?php
-
+/*PHP program to print type of data intialized
+Output
+integer
+double
+string*/
 //initializes the a,b,c values
 $a = 1;      //integer value
 $b = 1.0;   //double value

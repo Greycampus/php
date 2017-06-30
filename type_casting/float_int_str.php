@@ -1,5 +1,13 @@
 <?php
+/*PHP program to take float as input from user and convert it into integer and string then print it in respective manner
 
+Input
+3.6
+
+Output
+the int value:3
+converting into string:3.6
+*/
 $msg="enter a float:";
 echo $msg;
 //takes the float value

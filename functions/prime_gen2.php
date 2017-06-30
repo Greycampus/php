@@ -1,5 +1,15 @@
 <?php
+/*PHP program to enter a number to generate sequence of primes that are exactly at absoute difference of 1 with powers of two.
 
+Input
+enter the number:9
+
+Output
+primes that are exactly at absolute difference of 1 with powers of 2 are:
+3
+5
+7
+*/
 function soe($n,$prime)
 {
     $p = 2;
