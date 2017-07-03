@@ -43,6 +43,7 @@
 Examples
 
 Following examples will clear your concepts about matching characters.
+
 |Sr.No |	Expression & Description|
 |---|---|
 |1 |	[^a-zA-Z]<br/>It matches any string not containing any of the characters ranging from a through z and A through Z.|
@@ -64,6 +65,7 @@ Following examples will clear your concepts about matching characters.
 **PHP's Regexp POSIX Functions**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PHP currently offers seven functions for searching strings using POSIX-style regular expressions:
+
 |Sr.No |	Expression & Description|
 |---|---|
 |1| 	ereg()<br/>The ereg() function searches a string specified by string for a string specified by pattern, returning true if the pattern is found, and false otherwise.|
@@ -114,7 +116,8 @@ Following is the list of meta characters which can be used in PERL Style Regular
 
 **PHP's Regexp PERL Compatible Functions**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PHP offers following functions for searching strings using Perl-compatible regular expressions −
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PHP offers following functions for searching strings using Perl-compatible regular expressions 
+
 |Sr.No |	Function & Description|
 |---|---|
 |1 |	preg_match()<br/>The preg_match() function searches string for pattern, returning true if pattern exists, and false otherwise.|
