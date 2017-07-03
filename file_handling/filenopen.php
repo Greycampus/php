@@ -23,9 +23,9 @@ $li=$l-1;
 $no_of_lines = count(file($myFile)); 
 //check whether the line exists or not
 if($no_of_lines<$l)
-	echo "line does not exist\n";
+ echo "line does not exist\n";
 //displays if line exists 
 else
-	echo $lines[$li]; 
+ echo $lines[$li]; 
 
 ?>

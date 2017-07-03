@@ -24,8 +24,8 @@ echo "extracted email addresses are:\n";
 //displays the strings
 for($i=0;$i<$l;$i++)
 {
-	echo $matches[0][$i];
-	echo "\n";
+ echo $matches[0][$i];
+ echo "\n";
 }
 
 ?>

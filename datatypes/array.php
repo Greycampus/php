@@ -23,15 +23,11 @@ $a= fgets(STDIN, 1024);
 $a=trim($a);
 echo "enter the elements:";
 //by incrementing i value, the array stores the input values
- for( $i = 0; $i<$a; $i++ )
- {
-    $array[$i]=trim(fgets(STDIN, 1024));
- }
+for( $i = 0; $i<$a; $i++ )
+ $array[$i]=trim(fgets(STDIN, 1024));
  //displays all the value in the array
- echo "elements of list are:\n";
- for( $i = 0; $i<$a; $i++ )
- {
-    echo "$array[$i] \n";
- }
+echo "elements of list are:\n";
+for( $i = 0; $i<$a; $i++ )
+ echo "$array[$i] \n";
  
 ?>

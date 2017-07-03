@@ -10,12 +10,12 @@ The GCD is:3
 //logic for gcd function
 function gcdd($a,$b)
 {
-    #stopping condition for recursion that is bigger number is divisible by smaller number in gcd parameters
-    if(max($a,$b)%min($a,$b)==0)
-        return min($a,$b);
-    else
-        #returns gcd of remainder and divisor
-        return gcdd(min($a,$b),max($a,$b)%min($a,$b));
+  #stopping condition for recursion that is bigger number is divisible by smaller number in gcd parameters
+  if(max($a,$b)%min($a,$b)==0)
+   return min($a,$b);
+  else
+   #returns gcd of remainder and divisor
+   return gcdd(min($a,$b),max($a,$b)%min($a,$b));
 }
 $msg= "Enter two numbers whose GCD is to be found:";
 echo $msg;

@@ -26,26 +26,26 @@ echo "enter number you want to check:";
 $k=fgets(STDIN, 1024);
 $k=trim($k);
 if($k%$a==0 && $k==$a)
-    echo "you just entered the initial term again,yes its in series";
+ echo "you just entered the initial term again,yes its in series";
 elseif($k%$a==0 && $k%$r==0 && $k>$a)
 {
-	//dividing by a(initial term)
-    $tmp = $k/$a; 
-    while($tmp!=1 && $tmp >=$r)
-     {
-        //check for ratio exponential as in a.r^n
-        $tmp=$tmp/$r;
-      }
-    if($tmp==1)
-    {
-        $msg="yes its in series\n";
-        echo $msg;
-    }
-    else
-    {
-        $msg="not in series\n";
-        echo $msg;
-    }
+ //dividing by a(initial term)
+ $tmp = $k/$a; 
+ while($tmp!=1 && $tmp >=$r)
+ {
+   //check for ratio exponential as in a.r^n
+   $tmp=$tmp/$r;
+ }
+ if($tmp==1)
+ {
+  $msg="yes its in series\n";
+  echo $msg;
+ }
+ else
+ {
+  $msg="not in series\n";
+  echo $msg;
+ }
 }
 else
 {

@@ -9,11 +9,11 @@ factorial is:120
 */
 function factorial($number) 
 { 
-    if ($number ==1 || $number==0) 
-        return 1; 
-    else 
-    	//recursive function
-        return ($number * factorial($number-1)); 
+  if ($number ==1 || $number==0) 
+   return 1; 
+  else 
+   //recursive function
+   return ($number * factorial($number-1)); 
 }
 echo "Enter a number to find its factorial:";
 //number to find the factorial
