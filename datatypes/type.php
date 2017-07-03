@@ -1,5 +1,6 @@
 <?php
 /*PHP program to print type of data intialized
+
 Output
 integer
 double

@@ -19,6 +19,7 @@ Enter student for percentage:rag
 Output
 percentage of rag is 73
 */
+
 $msg="enter number of students:";
 echo $msg;
 //takes the value of number of students
