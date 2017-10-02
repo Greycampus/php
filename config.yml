@@ -1,0 +1,20 @@
+title: PHP
+meta_title: PHP Course
+meta_keywords: php, free php course, learn php
+author: Greycampus
+image_file: http://www.greycampus.com/logos/main.png
+toc:
+ - { 
+     level1: {
+       slug: level1,
+       topics: { introduction: Introduction, getting_started: Getting Started, data_types: Date Types, variables: Variables }
+     }, 
+     level2: {
+       slug: level2,
+       topics: { loops: Loops }
+     },
+     level3: {
+       slug: level3,
+       topics: { classes: Classes }
+     }
+}
