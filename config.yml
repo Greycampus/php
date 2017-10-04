@@ -24,5 +24,25 @@ toc:
        title: Data Types,
        slug: data-types,
        topics: { integers: integers }
+     },
+     Type-Casting: {
+       title: Type Casting,
+       slug: type-casting,
+       topics: { casting: Casting }
+     },
+     Operators: {
+       title: Operators,
+       slug: operators,
+       topics: { arithmetic-operators: Arithmetic Operators, comparision-operators: Comparision Operators, logical-operators: Logical Operators, assignment-operators: Assignment Operators, conditional-operators: Conditional Operators }
+     },
+     control-structures: {
+       title: Control Structures,
+       slug: control-structures,
+       topics: { decision-making: Desicion Making, loops: Loops }
+     },
+     arrays: {
+       title: Arrays,
+       slug: arrays,
+       topics: { arrays: Arrays }
      }
   }
