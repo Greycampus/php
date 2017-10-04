@@ -6,18 +6,22 @@ image_file: http://www.greycampus.com/logos/main.png
 toc:
  - { 
      Introduction: {
+       title: Introduction,
        slug: introduction,
        topics: { history: History, features: Features }
      }, 
      Installation-Process: {
+       title: Installation Process,
        slug: installation-process,
        topics: { install: Install, setup: Setup }
      },
      Variables: {
+       title: Variables,
        slug: variables,
        topics: { local-variables: Local Variables, functional-parameters: Functional Parameters, global-variables: Global Variables, static-variables: Static Variables, constants: Constants }
      },
      Data-Types: {
+       title: Data Types,
        slug: data-types,
        topics: { integers: integers }
      }
