@@ -9,7 +9,7 @@ toc:
        slug: introduction,
        topics: { history: History, features: Features }
      }, 
-     Installation Process: {
+     InstallationProcess: {
        slug: installation-process,
        topics: { install: Install, setup: Setup }
      },
@@ -17,7 +17,7 @@ toc:
        slug: variables,
        topics: { local-variables: Local Variables, functional-parameters: Functional Parameters, global-variables: Global Variables, static-variables: Static Variables, constants: Constants }
      },
-     Data Types: {
+     DataTypes: {
        slug: data-types,
        topics: { integers: integers }
      }
