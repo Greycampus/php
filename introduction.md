@@ -1,5 +1,5 @@
 ---
-slug: php-introduction-history
+slug: php/introduction/history
 ---
 
 ### ﻿Introduction:
