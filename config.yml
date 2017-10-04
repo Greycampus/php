@@ -5,9 +5,8 @@ author: Greycampus
 image_file: http://www.greycampus.com/logos/main.png
 status: published
 toc: 
-  Introduction:
+  introduction:
     title: Introduction
-    slug: introduction
     topics: 
       history: 
         title: History 
@@ -18,9 +17,8 @@ toc:
         examples:
           program1: Program2
  
-  Installation-Process:
+  installation-process:
     title: Installation Process
-    slug: installation-process
     topics: 
       install: 
         title: Install
