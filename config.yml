@@ -30,3 +30,97 @@ toc:
         examples:
           program1: Program1
           program2: Program2
+  variables:
+    title: Variables,
+    topics: 
+      local-variables: 
+        title: Local Variables
+        examples:
+          program1: Program1
+          program2: Program2
+      functional-parameters: 
+        title: Functional Parameters 
+        examples:
+          program1: Program1
+          program2: Program2
+      global-variables: 
+        title: Global Variables
+        examples:
+          program1: Program1
+          program2: Program2
+      static-variables: 
+        title: Static Variables
+        examples:
+          program1: Program1
+          program2: Program2 
+      constants: 
+        title: Constants
+        examples:
+          program1: Program1
+          program2: Program2
+  data-types:
+    title: Data Types,
+    topics: 
+      integers: 
+        title: integers
+        exmaples:
+          program1: Program1
+          program2: Program2  
+
+  type-casting:
+    title: Type Casting,
+    topics: 
+      casting: 
+        title: Casting
+        exmaples:
+          program1: Program1
+          program2: Program2
+  operators: 
+    title: Operators,
+    topics: 
+      arithmetic-operators: 
+        title: Arithmetic Operators 
+        exmaples:
+          program1: Program1
+          program2: Program2
+      comparision-operators: 
+        title: Comparision Operators
+        exmaples:
+          program1: Program1
+          program2: Program2 
+      logical-operators: 
+        title: Logical Operators
+        exmaples:
+          program1: Program1
+          program2: Program2 
+      assignment-operators: 
+        title: Assignment Operators
+        exmaples:
+          program1: Program1
+          program2: Program2 
+      conditional-operators: 
+        title: Conditional Operators
+        exmaples:
+          program1: Program1
+          program2: Program2
+  control-structures:
+    title: Control Structures,
+    topics: 
+      decision-making: 
+        title: Desicion Making 
+        exmaples:
+          program1: Program1
+          program2: Program2
+      loops: 
+        title: Loops
+        exmaples:
+          program1: Program1
+          program2: Program2
+  arrays:
+    title: Arrays,
+    topics: 
+      arrays: 
+        title: Arrays
+        exmaples:
+          program1: Program1
+          program2: Program2
