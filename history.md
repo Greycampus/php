@@ -1,5 +1,5 @@
 ---
-slug: php/introduction/features
+slug: php-introduction-features
 ---
 
 **1.2. Features:**
