@@ -1,6 +1,6 @@
 title: PHP
 meta_title: PHP Course
-meta_keywords: php, free php course, learn php
+meta_keywords: php free php course learn php
 author: Greycampus
 image_file: http://www.greycampus.com/logos/main.png
 status: published
@@ -31,7 +31,7 @@ toc:
           program1: Program1
           program2: Program2
   variables:
-    title: Variables,
+    title: Variables
     topics: 
       local-variables: 
         title: Local Variables
@@ -59,7 +59,7 @@ toc:
           program1: Program1
           program2: Program2
   data-types:
-    title: Data Types,
+    title: Data Types
     topics: 
       integers: 
         title: integers
@@ -68,7 +68,7 @@ toc:
           program2: Program2  
 
   type-casting:
-    title: Type Casting,
+    title: Type Casting
     topics: 
       casting: 
         title: Casting
@@ -76,7 +76,7 @@ toc:
           program1: Program1
           program2: Program2
   operators: 
-    title: Operators,
+    title: Operators
     topics: 
       arithmetic-operators: 
         title: Arithmetic Operators 
@@ -104,7 +104,7 @@ toc:
           program1: Program1
           program2: Program2
   control-structures:
-    title: Control Structures,
+    title: Control Structures
     topics: 
       decision-making: 
         title: Desicion Making 
@@ -117,7 +117,7 @@ toc:
           program1: Program1
           program2: Program2
   arrays:
-    title: Arrays,
+    title: Arrays
     topics: 
       arrays: 
         title: Arrays
