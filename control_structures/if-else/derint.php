@@ -10,6 +10,7 @@ after differntion the equation is:6.00x5 + 25.00x4 + 24.00x3 + 12.00x2 + 6.00x1 
 after integration the equation is:0.14285714285714x7 + 0.83333333333333x6 + 1.2x5 + 1x4 + 1x3 + 15x1 +C
 
 */
+
 $msg="enter the coefficients:\n";
 echo $msg;
 $equa= trim(fgets(STDIN, 1024));
